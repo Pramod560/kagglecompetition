@@ -47,7 +47,6 @@ print(accuracy_score(y_test, y))
 
 y1 = clf.predict(full_test_data.drop(['PassengerId','Name', "Ticket", "Cabin"], axis=1))
 
-display(submission_data.head())
+display(y1)
 
-submission_data["Survived"] = y1
-submission_data.to_csv("gender_submission.csv",index=False)
+
